@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filterable Image Gallery</title>
+    <link rel="icon" href="images\icons8-gallery-96.png">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+     <div class="full-img" id="fullImgBox">
+        <img src="images\iphone1.jpg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+     </div>
+    <div class="container">
+        <!--BUTTONS-->
+        <div class="filter-buttons">
+            <button class="active" data-name="all">Show All</button>
+            <button data-name="phones">Phones</button>
+            <button data-name="dresses">Dresses</button>
+            <button data-name="accessories">Accessories</button>
+        </div>
+        
+        <!--images-->
+        <div class="filterable-cards">
+            <div class="card" data-name="phones">
+                <img src="images\iphone1.png" alt="iphone1" onclick="openFullImg(this.src)">
+                <div class="card-body">
+                    <h6 class="card-title">Phone</h6>
+                    <p class="card-text">Lorem ipsum dolor sit amet phones.</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="phones">
+                <img src="images\iphone2.jpg" alt="iphone2" onclick="openFullImg(this.src)">
+                <div class="card-body">
+                    <h6 class="card-title">Phone</h6>
+                    <p class="card-text">Lorem ipsum dolor sit amet phones.</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="phones">
+                <img src="images\iphone3.jpg" alt="iphone3" onclick="openFullImg(this.src)">
+                <div class="card-body">
+                    <h6 class="card-title">Phone</h6>
+                    <p class="card-text">Lorem ipsum dolor sit amet phones.</p>
+                </div>
+            </div>
+            
+            <div class="card" data-name="dresses">
+                <img src="images\⭒.jfif" alt="dress1" onclick="openFullImg(this.src)">
+                <div class="card-body">
+                    <h6 class="card-title">Dresses</h6>
+                    <p class="card-text">Lorem ipsum dolor sit amet dresses.</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="dresses">
+                <img src="images\dress2.webp" alt="dress2" onclick="openFullImg(this.src)">
+                <div class="card-body">
+                    <h6 class="card-title">Dresses</h6>
+                    <p class="card-text">Lorem ipsum dolor sit amet dresses.</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="accessories">
+                <img src="images\accessories1.jfif" alt="accessories1" onclick="openFullImg(this.src)">
+                <div class="card-body">
+                    <h6 class="card-title">Accessories</h6>
+                    <p class="card-text">Lorem ipsum dolor sit amet accessories.</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="accessories">
+                <img src="images\accessories2.jpg" alt="accessories2" onclick="openFullImg(this.src)">
+                <div class="card-body">
+                    <h6 class="card-title">Accessories</h6>
+                    <p class="card-text">Lorem ipsum dolor sit amet accessories.</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="accessories">
+                <img src="images\accessories3.jpg" alt="accessories3" onclick="openFullImg(this.src)">
+                <div class="card-body">
+                    <h6 class="card-title">Accessories</h6>
+                    <p class="card-text">Lorem ipsum dolor sit amet accessories.</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="index.JS"></script>
+</body>
+</html>         
