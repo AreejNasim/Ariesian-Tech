@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="icon" href="Images\music player icon">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/9a89e096b7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <!-- First music player -->
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="Images\img1.jfif" class="song-img">
+            <h1>Despacito</h1>
+            <p>Luis Fonsi</p>
+            <audio id="song1">
+                <source src="media/Luis-Fonsi-Ft-Daddy-Yankee-Despacito-(TrendyBeatz.com).mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress1">
+            <div class="controls">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause('song1', 'ctrlIcon1', 'progress1')"><i class="fa-solid fa-play" id="ctrlIcon1"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- Second music player -->
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="Images\img2.jfif" class="song-img">
+            <h1>Shape of You</h1>
+            <p>Ed Sheeran</p>
+            <audio id="song2">
+                <source src="media\11088_Ed Sheeran - Shape of You SHOW2BABI.COM.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress2">
+            <div class="controls">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause('song2', 'ctrlIcon2', 'progress2')"><i class="fa-solid fa-play" id="ctrlIcon2"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- Third music player -->
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="Images\image3.jfif" class="song-img">
+            <h1>Mesaytara</h1>
+            <p>Lamis Kan</p>
+            <audio id="song3">
+                <source src="media\Mesaytara(PagalWorld.com.so).mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress3">
+            <div class="controls">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause('song3', 'ctrlIcon3', 'progress3')"><i class="fa-solid fa-play" id="ctrlIcon3"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
